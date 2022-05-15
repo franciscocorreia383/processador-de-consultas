@@ -1,0 +1,29 @@
+package com.example.demo.services;
+
+import java.util.ArrayList;
+
+public class RelationalAlgebra {
+
+	private ArrayList<String> selection;
+	private ArrayList<String> projection;
+	private ArrayList<String> junction;
+	
+	public RelationalAlgebra() {
+		this.selection = new ArrayList<>();
+		this.junction = new ArrayList<>();
+		this.projection = new ArrayList<>();
+	}
+
+	public ArrayList<String> getSelection() {
+		return selection;
+	}
+
+	public ArrayList<String> getProjection() {
+		return projection;
+	}
+
+	public ArrayList<String> getJunction() {
+		return junction;
+	}	
+	
+}

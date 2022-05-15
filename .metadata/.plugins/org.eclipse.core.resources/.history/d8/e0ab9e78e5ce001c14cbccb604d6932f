@@ -1,0 +1,14 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Services {
+
+	@Autowired
+	Parser parser = new Parser();
+	
+	void parserString(String query) {
+		parser.ParserString(query);
+	}
+	
+}

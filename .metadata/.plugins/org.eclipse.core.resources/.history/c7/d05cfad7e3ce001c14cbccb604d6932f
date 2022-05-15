@@ -1,0 +1,37 @@
+package com.example.demo.entities;
+
+import java.util.ArrayList;
+
+public class Query {
+
+	private ArrayList<String> columns;
+	private ArrayList<String> where;
+	private ArrayList<String> table;
+	private ArrayList<String> join;
+	
+	public Query() {
+		super();
+		this.columns = new ArrayList<>();
+		this.where = new ArrayList<>();
+		this.table = new ArrayList<>();
+		this.join = new ArrayList<>();
+	}
+
+	public ArrayList<String> getColumns() {
+		return columns;
+	}
+
+	public ArrayList<String> getWhere() {
+		return where;
+	}
+
+	public ArrayList<String> getTable() {
+		return table;
+	}
+
+	public ArrayList<String> getJoin() {
+		return join;
+	}
+	
+	
+}

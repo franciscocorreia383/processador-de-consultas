@@ -1,0 +1,15 @@
+import java.lang.reflect.Field;
+
+public class Categoria {
+
+double idCategoria = (double) 1;
+String DescCategoria;
+public Categoria() {
+	super();
+
+}
+
+
+
+
+}

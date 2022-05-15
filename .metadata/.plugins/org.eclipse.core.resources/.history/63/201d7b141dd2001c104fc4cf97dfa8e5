@@ -1,0 +1,24 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.entities.Query;
+
+public class Services {
+
+	@Autowired
+	Parser parser = new Parser();
+	Query query = new Query();
+	
+	public void parserString(String sql) {
+		query = parser.ParserString(sql);
+		System.out.println(query.getColumns().toString());
+		System.out.println(query.getJoin().toString());
+		System.out.println(query.getWhere());
+		
+		System.out.println(query.getWhere().isEmpty());
+	}
+	
+	
+	
+}

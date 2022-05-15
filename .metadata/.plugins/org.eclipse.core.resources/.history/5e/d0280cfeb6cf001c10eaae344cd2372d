@@ -1,0 +1,47 @@
+package com.example.demo.services;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entities.Query;
+
+@Service
+public class Parser {
+
+	Query query = new Query();
+	
+	Query ParserString(String parser){
+		
+		Query query = new Query();
+		
+		String[] aux =  parser.split(" ");
+		
+//		for (String string : aux) {
+//			System.out.println(string);
+//		}
+//
+//		for (int i = 0; i < aux.length; i++) {
+//			System.out.printf(aux[i]+" ");
+//			System.out.println(i);
+//		}
+		
+		System.out.println(aux[9]);
+		System.out.println(aux[9].compareTo("from"));
+		
+	
+//		int count = 2;
+//		
+//		while(aux[count].toString() != "from") {
+//			
+//			System.out.println(aux[count]);
+//			
+//			count ++;
+//		}
+		
+		return query;
+	}
+	
+}

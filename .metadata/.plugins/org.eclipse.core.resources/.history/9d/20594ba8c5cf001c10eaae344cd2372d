@@ -1,0 +1,10 @@
+package com.example.demo.services;
+
+public class RelationalAlgebra {
+
+	private String select;
+	private String projection;
+	private String junction;
+	
+	
+}

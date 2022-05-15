@@ -1,0 +1,34 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.entities.Query;
+
+public class Services {
+
+	@Autowired
+	Parser parser = new Parser();
+	Query query = new Query();
+	
+	public RelationalAlgebra parserString(String sql) {
+		
+		query = parser.ParserString(sql);
+//		System.out.println(query.getColumns().toString());
+//		System.out.println(query.getJoin().toString());
+//		System.out.println(query.getWhere());
+//		
+		RelationalAlgebra algebra = new RelationalAlgebra();
+		
+		algebra.getProjection().addAll(query.getColumns());
+		algebra.getJunction().addAll(query.getJoin());
+		
+		if (!query.getWhere().isEmpty()) {
+			algebra.getSelection().addAll(query.getWhere());
+		}
+		
+		return algebra;
+	}
+	
+	
+	
+}
