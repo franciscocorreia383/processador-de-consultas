@@ -1,5 +1,0 @@
-
-public class TipoConta {
-int idTipoConta = 1;
-String Descricao = "a";
-}
