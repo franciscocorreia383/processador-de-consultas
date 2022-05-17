@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Movimentacao {
 
 	private ArrayList<String> columns;
+	private long tuples;
 	
 	public Movimentacao() {
 		columns = new ArrayList<>();
@@ -15,10 +16,19 @@ public class Movimentacao {
 		columns.add("Categoria_idCategoria");
 		columns.add("Contas_idConta");
 		columns.add("Valor");
+		this.setTuples(2000000000);
 	}
 
 	public ArrayList<String> getColumns() {
 		return columns;
+	}
+
+	public long getTuples() {
+		return tuples;
+	}
+
+	public void setTuples(long tuples) {
+		this.tuples = tuples;
 	}
 	
 }

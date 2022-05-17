@@ -1,4 +1,4 @@
-package com.example.demo.entities.tables;
+package com.example.demo.entities;
 
 import java.util.ArrayList;
 
@@ -7,12 +7,16 @@ public class Grafo {
 	private boolean containsJunction;
 	private ArrayList<String> projection;
 	private ArrayList<String> junction;
+	private ArrayList<String> selection;
+	private ArrayList<OptimizedSelectionTuple> optimizedSelection;
 
 	public Grafo() {
 		this.containsJunction = false;
 		this.containsSelection = false;
 		projection = new ArrayList<>();
 		junction = new ArrayList<>();
+		selection = new ArrayList<>();
+		optimizedSelection = new ArrayList<>();
 	}
 
 	public boolean isContainsSelection() {
@@ -39,4 +43,13 @@ public class Grafo {
 		return junction;
 	}
 
+	public ArrayList<String> getSelection() {
+		return selection;
+	}
+
+	public ArrayList<OptimizedSelectionTuple> getOptimizedSelection() {
+		return optimizedSelection;
+	}
+
+	
 }

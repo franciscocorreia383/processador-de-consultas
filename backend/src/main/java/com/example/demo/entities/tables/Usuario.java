@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Usuario {
 	private ArrayList<String> columns;
+	private long tuples;
 	
 	public Usuario() {
 		columns = new ArrayList<>();
@@ -15,10 +16,19 @@ public class Usuario {
 		columns.add("CEP");
 		columns.add("UF");
 		columns.add("DataNascimento");
+		this.setTuples(1000000);
 	}
 
 	public ArrayList<String> getColumns() {
 		return columns;
+	}
+
+	public long getTuples() {
+		return tuples;
+	}
+
+	public void setTuples(long tuples) {
+		this.tuples = tuples;
 	}
 	
 }
