@@ -14,7 +14,7 @@ public class Contas {
 		columns.add("TipoConta_idTipoConta");
 		columns.add("Usuario_idUsuario");
 		columns.add("SaldoInicial");
-		this.tuples = 100000;
+		this.tuples = 100000; 
 	}
 
 	public ArrayList<String> getColumns() {
