@@ -16,11 +16,17 @@ public class Services {
 	
 		//SqlVerify sqlVerify = new SqlVerify(regex, sql);
 		
-		query = parser.ParserString(sql);
+//		query = parser.ParserString(sql);
 //		System.out.println(query.getColumns().toString());
 //		System.out.println(query.getJoin().toString());
 //		System.out.println(query.getWhere());
 //		
+		try {
+			NewParser.Parser(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		RelationalAlgebra algebra = new RelationalAlgebra();
 		
 		algebra.getProjection().addAll(query.getColumns());

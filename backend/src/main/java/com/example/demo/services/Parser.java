@@ -3,6 +3,7 @@ package com.example.demo.services;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entities.Query;
+import com.example.demo.entities.tables.Usuario;
 
 @Service
 public class Parser {
@@ -10,6 +11,7 @@ public class Parser {
 	public Query ParserString(String parser) {
 
 		Query query = new Query();
+		Usuario user = new Usuario();
 
 		String[] aux = parser.split(" ");
 		
@@ -22,6 +24,7 @@ public class Parser {
 				query.setEnableSelection(true);
 			}
 		}
+		
 
 		int count = 2;
 

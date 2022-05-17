@@ -13,9 +13,8 @@ function App() {
 
     async function handleCreateAlgebra(event) {
         event.preventDefault();
-
         const body = {
-            query: sql
+            query: sql.toUpperCase()
         }
 
         try {
@@ -23,9 +22,9 @@ function App() {
             setAlgebra(data.data)
             setSelection(data.data.bSelection)
             console.log(data.data);
-            alert(selection)
+           // alert(selection)
         } catch (error) {
-            alert(error)
+            //alert(error)
         }
     }
 
@@ -60,8 +59,9 @@ function App() {
             <div>
                 <strong>Grafo</strong>
                 <Graphviz dot={`digraph {
-                Tabela -> Resultado_da_seleção [label="",weight="0.2"];
-                Resultado_da_seleção -> Resultado_da_projeção [label="¶ Nome, Data_Admissao",weight="0.2"];
+                    a -> b
+                    b -> c
+                    c -> a
                   }`} />
 
                   <></>

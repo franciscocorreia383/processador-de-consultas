@@ -7,12 +7,12 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.example.demo.entities.Categoria;
-import com.example.demo.entities.Contas;
-import com.example.demo.entities.Movimentacao;
-import com.example.demo.entities.TipoConta;
-import com.example.demo.entities.TipoMovimento;
-import com.example.demo.entities.Usuario;
+import com.example.demo.entities.tables.Categoria;
+import com.example.demo.entities.tables.Contas;
+import com.example.demo.entities.tables.Movimentacao;
+import com.example.demo.entities.tables.TipoConta;
+import com.example.demo.entities.tables.TipoMovimento;
+import com.example.demo.entities.tables.Usuario;
 
 public class SqlVerify {
 	String regex;
